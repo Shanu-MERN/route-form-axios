@@ -70,9 +70,7 @@
   justify-content: center;
   height: 100%;
   border-radius: 1rem;
-  /* background: rgba(255, 255, 255, 0.438); */
   background: rgba(0, 0, 0, 0.438);
-  color: whitesmoke;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -229,7 +227,8 @@
   padding: 0.5rem 1rem;
 }
 
-.cert-item, .hobby-item {
+.cert-item,
+.hobby-item {
   font-size: 1.25vw;
 }
 
@@ -238,11 +237,11 @@
 }
 
 .App {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.rick-title {
+.route-title {
   /* width: 100vw; */
   font-size: 2rem;
   display: flex;
@@ -278,12 +277,82 @@ flex-direction: column;
 }
 .name {
   gap: 0.5rem;
-  /* white-space: nowrap; */
-  /* display: flex;
-align-items: center; */
 }
-.t {
-display: flex;
-align-items: center;
 
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  gap: 1rem;
+}
+
+.display {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 10vh;
+  width: 450px;
+  font-size: 2rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+}
+.operator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-basis: calc(100% / 4);
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.438);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+}
+
+.keyboard button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-basis: calc(100% / 4);
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.438);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.App a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.438);
+  cursor: pointer;
 }

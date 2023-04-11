@@ -19,7 +19,7 @@ function Rick() {
 
   return (
     <div className="App">
-      <div className="rick-title">Rick n Morty</div>
+      <div className="route-title">Rick n Morty</div>
       <div className="characters">
         {Data?.map((character) => (
           <div className="card" key={character.id}>
@@ -28,11 +28,11 @@ function Rick() {
               <div className="name">
                 {character.name}{" "}
                 {character.gender === "Male" ? (
-                  <BsGenderMale className="t" />
+                  <BsGenderMale />
                 ) : character.gender === "Female" ? (
-                  <BsGenderFemale className="t" />
+                  <BsGenderFemale />
                 ) : (
-                  <BsQuestionLg className="t" />
+                  <BsQuestionLg />
                 )}
               </div>
               {/* <div className="gender">{character.gender}</div> */}
