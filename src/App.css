@@ -1,0 +1,289 @@
+.Portfolio {
+  display: flex;
+  color: whitesmoke;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  padding: 0 4px;
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  background-color: white;
+  background-clip: padding-box;
+}
+
+.blur {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.664);
+  backdrop-filter: blur(1rem);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100vh;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.left {
+  width: 35vw;
+}
+
+.left .container {
+  padding: 3rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.intro {
+  text-align: justify;
+  font-size: 1.23vw;
+  font-weight: 600;
+}
+
+.container {
+  overflow: overlay;
+  overflow-x: hidden;
+  display: flex;
+  z-index: 2;
+  justify-content: center;
+  height: 100%;
+  border-radius: 1rem;
+  /* background: rgba(255, 255, 255, 0.438); */
+  background: rgba(0, 0, 0, 0.438);
+  color: whitesmoke;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main {
+  flex-direction: column;
+  gap: 1.3rem;
+  padding: 2rem;
+  justify-content: flex-start;
+}
+
+.topic {
+  display: flex;
+  align-items: flex-start;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 77%;
+}
+
+.title {
+  display: flex;
+  font-size: 1.6vw;
+  font-weight: 600;
+  width: 23%;
+}
+
+.edu-title {
+  font-weight: 500;
+  font-size: 1.4vw;
+}
+.edu-desc {
+  font-weight: 300;
+  font-size: 1.25vw;
+}
+
+.skill {
+  display: flex;
+  gap: 1rem;
+}
+
+.skill-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.progress-track {
+  box-sizing: content-box;
+  height: 0.6rem;
+  width: 20vw;
+  border-radius: 1rem;
+  background-color: black;
+}
+
+.progress-thumb {
+  display: block;
+  position: relative;
+  height: 0.6rem;
+  border-radius: 1rem;
+  background-color: whitesmoke;
+}
+
+.icon {
+  font-size: 2.8vw;
+}
+
+.tool-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.tool-content {
+  justify-content: center;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.project-name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+.project-tool {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.project-desc {
+  font-size: 1.15vw;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.up {
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  height: 30%;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+
+.up-title {
+  font-size: 2.75vw;
+  display: flex;
+  gap: 1rem;
+}
+
+.up-desc {
+  font-size: 2.1vw;
+  font-weight: 300;
+}
+
+.right {
+  width: 65vw;
+}
+
+.photo {
+  background: white;
+  height: 15vw;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 0 -0.7rem;
+  border-radius: 50%;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-item {
+  font-size: 1.4vw;
+  background-color: whitesmoke;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.cert-item, .hobby-item {
+  font-size: 1.25vw;
+}
+
+.skill-title {
+  font-size: 1.3vw;
+}
+
+.App {
+display: flex;
+flex-direction: column;
+}
+
+.rick-title {
+  /* width: 100vw; */
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  font-weight: 800;
+}
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.card {
+  max-width: 300px;
+  border-radius: 1rem;
+  background-color: black;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.info {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.name {
+  gap: 0.5rem;
+  /* white-space: nowrap; */
+  /* display: flex;
+align-items: center; */
+}
+.t {
+display: flex;
+align-items: center;
+
+}
